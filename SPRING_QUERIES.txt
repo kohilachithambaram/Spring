@@ -1,0 +1,70 @@
+				SPRING PROJECT DATABASE
+
+create database customer_db;
+use customer_db;
+desc customer;
++----------------+--------------+------+-----+---------+-------+
+| Field          | Type         | Null | Key | Default | Extra |
++----------------+--------------+------+-----+---------+-------+
+| customer_id    | bigint(20)   | NO   | PRI | NULL    |       |
+| customer_email | varchar(255) | YES  |     | NULL    |       |
+| customer_name  | varchar(255) | YES  |     | NULL    |       |
+| customerphone  | varchar(255) | YES  |     | NULL    |       |
++----------------+--------------+------+-----+---------+-------+
+ select * from customer;
++-------------+----------------+---------------+---------------+
+| customer_id | customer_email | customer_name | customerphone |
++-------------+----------------+---------------+---------------+
+|           1 | koki@gmail.com | Kohila        | 9788715094    |
++-------------+----------------+---------------+---------------+
+ select * from customer;
++-------------+-----------------+---------------+---------------+
+| customer_id | customer_email  | customer_name | customerphone |
++-------------+-----------------+---------------+---------------+
+|           1 | koki@gmail.com  | Kohila        | 9788715094    |
+|           2 | stark@gmail.com | Kulo          | 7708644502    |
++-------------+-----------------+---------------+---------------+
+select * from customer;
++-------------+------------------+---------------+---------------+
+| customer_id | customer_email   | customer_name | customerphone |
++-------------+------------------+---------------+---------------+
+|           1 | koki@gmail.com   | Kohila        | 9788715094    |
+|           2 | stark@gmail.com  | Kulo          | 7708644502    |
+|           3 | dhar@gmail.com   | Dhar          | 9578275281    |
+|           4 | gher@gmail.com   | Gher          | 9095078308    |
+|           5 | poongs@gmail.com | poongs        | 7904155232    |
++-------------+------------------+---------------+---------------+
+TESTED CHANING UPDATE in APPLICATION PROPERTIES from CREATE
+ select * from customer;
++-------------+------------------+---------------+---------------+
+| customer_id | customer_email   | customer_name | customerphone |
++-------------+------------------+---------------+---------------+
+|           1 | koki@gmail.com   | Kohila        | 9788715094    |
+|           2 | stark@gmail.com  | Kulo          | 7708644502    |
+|           3 | dhar@gmail.com   | Dhar          | 9578275281    |
+|           4 | gher@gmail.com   | Gher          | 9095078308    |
+|           5 | poongs@gmail.com | poongs        | 7904155232    |
+|           6 | poongs@gmail.com | poongs        | 7904155232    |
++-------------+------------------+---------------+---------------+
+DELETE
+ select * from customer;
++-------------+------------------+---------------+---------------+
+| customer_id | customer_email   | customer_name | customerphone |
++-------------+------------------+---------------+---------------+
+|           2 | stark@gmail.com  | Kulo          | 7708644502    |
+|           3 | dhar@gmail.com   | Dhar          | 9578275281    |
+|           4 | gher@gmail.com   | Gher          | 9095078308    |
+|           5 | poongs@gmail.com | poongs        | 7904155232    |
+|           6 | poongs@gmail.com | poongs        | 7904155232    |
++-------------+------------------+---------------+---------------+
+UPDATING SINGLE DATA
+select * from customer;
++-------------+------------------+---------------+---------------+
+| customer_id | customer_email   | customer_name | customerphone |
++-------------+------------------+---------------+---------------+
+|           2 | stark@gmail.com  | Kulo          | 7708644502    |
+|           3 | dhar@gmail.com   | Dhar          | 9578275281    |
+|           4 | gher@gmail.com   | Gher          | 9095078308    |
+|           5 | poongs@gmail.com | poongs        | 7904155232    |
+|           6 | poongs@gmail.com | poongodi      | 7904155232    |
++-------------+------------------+---------------+---------------+
